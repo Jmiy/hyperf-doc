@@ -1,0 +1,9 @@
+services:
+  ptx-vip:
+    build:
+      context: cgi-docker
+      dockerfile: Dockerfile
+    image: hyperf/hyperf:7.4-alpine-v3.11-swoole
+    command:
+      - "-dextension=/path/to/swoole.so"
+      - "-dextension=/path/to/swoole_tracker7x.so"

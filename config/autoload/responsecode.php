@@ -1,0 +1,110 @@
+<?php
+
+return [
+    /*
+      |--------------------------------------------------------------------------
+      | Response Code Configuration
+      |--------------------------------------------------------------------------
+     */
+
+    '1' => 'success', //成功
+    '0' => 'failure', //失败
+    '10000' => 'Account has been activated', //账号已激活
+    '10001' => 'Messages are limited,please wait for about 10 minutes before you try again.', //激活邮件超过频次限制
+    '10002' => 'Multiple registrations of the same account at the same time', //同一时间同一账号多次注册
+    '10003' => 'The same account is bound multiple times at the same time', //同一时间同一账号多次导入shopify
+    '10016' => 'System error, input again 60 seconds later.', //注册失败
+    '10029' => 'Account already exists', //账号已经存在
+    '10099' => 'Account number cannot be empty.', //账号不能为空
+    '10100' => 'The account number logged in by social media is not allowed to be modified.', //社媒登陆的账号不允许修改
+    '10101' => 'Email already exists, change another one.', //新账号在会员系统存在，不能编辑
+    '10102' => 'Email already exists, change another one.', //新账号已经存在shopify，不能编辑
+    '10103' => 'System error. Try again later.', //现账号不存在于shopify
+    '10104' => 'System error. Try again later.', //shopify账号修改失败
+    '10105' => 'System Error,Please Contact: support@xmpow.com.', //账号修改失败
+    '10106' => 'It can only be modified once in 24 hours.', //24小时只能修改一次
+    '20000' => '', //积分相关.
+    '30000' => 'Order already exists, please fill in a new one.', //订单重复绑定.
+    '30001' => 'The same order is bound multiple times at the same time', //同一订单同一时间多次绑定
+    '39000' => 'Order number must be passed', //订单号必传
+    '39001' => 'Order does not exist', //订单不存在
+    '39002' => 'No order email triggered', //没有触发订单邮件
+    '39003' => 'Email exist.', //订单邮件已经存在
+    '39005' => 'Email processing', //订单邮件处理中
+    '50000' => '', //分享相关.
+    '60000' => '', //活动相关.
+    '60001' => 'Participation must be activated', //参加活动必须激活
+    '60002' => 'Application information has been filled in, please do not submit again',
+    '60003' => 'Your application is still in progress, please wait for the result.',
+    '60005' => "Successful application, don't repeat application", //申请众测成功，不要重复申请
+    '60006' => 'The requested product does not exist', //申请的商品不存在
+    '60007' => 'The unlocked prize has been given out. You can join the event to get the gift for free too.', //库存不足
+    '60008' => 'Multiple applications for the same product at the same time', //同一时间同一产品多次申请
+    '60009' => 'The requested quantity of products is illega', //申请的商品数量不合法
+    '60010' => 'Submit failed, please submit later', //添加申请记录失败
+    '60011' => 'Only one user can apply for the same IP or account',
+    '61000' => 'Already voted', //已经投票
+    '61001' => 'Voting item does not exist', //投票项不存在
+    '61002' => 'Submit failed, please submit later', //投票失败
+    '61003' => 'Failed to update voting leaderboard', //更新投票排行榜失败
+    '61004' => 'Request processing, please do not repeat the request', //高并发投票失败
+    '61100' => 'Unlock inviter account does not exist', //解锁邀请者账号不存在
+    '61101' => 'You have helped, please do not repeat', //被邀请者已经助力过
+    '61102' => 'Power Success', //用户未申请商品
+    '61103' => 'Power Success', //用户未申请商品
+    '61104' => 'The product has been unlocked successfully, no need to repeatedly unlock', //商品已经解锁成功,不需要重复解锁
+    '61105' => 'You cannot help yourself', //解锁者和邀请者是同一个账号
+    '61106' => 'Submit failed, please submit later', //添加解锁流水失败
+    '61107' => 'Submit failed, please submit later', //更新库存失败
+    '61108' => 'Power Success', //解锁过程中已经被别人优先解锁
+    '61109' => 'Inventory shortage', //总库存或者分库存不足
+    '61110' => 'Submit failed, please submit later', //更新解锁状态失败
+    '61111' => 'Request processing, please do not repeat the request', //同一时间同一ip多次助力解锁
+    '61112' => 'You have helped, please do not repeat', //被邀请者已经助力过
+    '61113' => 'Submit failed, please submit later', //更新商品申请数量失败
+    '61114' => 'The task is not completed.', //任务没完成
+    '61115' => 'File is illegal', //文件不合法
+    '61116' => 'Image uploaded', //已上传过图片
+    '61117' => 'IP address is invalid', //IP地址不合法
+    '61118' => 'Not within operable time period', //不在可操作时间段内
+    '62000' => 'The opportunity to participate in the event has been used up', //参与活动的机会已经使用完了
+    '62001' => 'Exceeded the number of winnings', //超过了中奖次数
+    '62002' => 'No prizes', //已经没有奖品
+    '62003' => 'Failure to obtain winning data', //中奖数据获取失败
+    '62004' => 'Not winning', //如果已经中过实物奖，就不可以中其他奖品了
+    '62005' => 'The lucky draw has been used up', //抽奖机会已经使用完了
+    '62006' => 'Invalid invitation code', //邀请码无效
+    '62007' => 'Request processing, please do not repeat the request', //同一时间同一用户多次抽奖
+    '62008' => 'Not winning', //已经中过安慰奖，不能再中安慰奖
+    '69998' => 'Activity does not exist', //活动不存在
+    '69999' => 'Activity has ended', //活动结束
+    '70000' => 'No Support Subcribe', //该官网不支持订阅
+    '70001' => 'You have subscribed', //邮箱已经订阅
+    '80000' => 'Mail failed to send',
+    '80001' => 'Mail failed to send', //发送邮件异常
+    '90000' => '', //会员通讯录相关
+    '100000' => 'Request processing, please do not repeat the request', //高并发提交调查问券，提交失败
+    '100001' => 'Submitted, no need to repeat', //同一个ip调查问券已经提交，不需要重复提交
+    '100002' => 'Request processing, please do not repeat the request', //并发发送调查问券邮件
+    '100003' => 'Mail already exists', //调查问券邮件已存在
+    '100004' => 'Submitted, no need to repeat', //同一个邮箱调查问券已经提交，不需要重复提交
+    '110000' => 'Submit failed, please submit later', //添加联系我们记录失败
+    '110001' => 'Request processing, please do not repeat the request', //高并发签到失败
+    '110002' => 'The day has to sign', //当天已经签到
+    '9800000000' => 'Shopify interface request frequency is too high, please request later.', //shopify接口请求频率过高，请稍后请求。
+    '9900000000' => 'Call to undefined function',
+    '9900000001' => 'return empty.',
+    '9900000002' => 'Method execution failed', //方法执行失败
+    '9999999998' => 'Required parameters are not passed', //必传参数未传
+    '9999999999' => 'Request parameter exception', //请求参数异常
+    '30002' => 'Order does not exist', //订单不存在
+    '30003' => 'The order does not belong to you', //订单不属于当前用户
+    '30004' => 'Order request reward does not exist', //订单索评奖励不存在
+    '30005' => 'Order request reward does not exist', //订单索评奖励不存在
+    '30006' => 'Order review has been rated', //订单索评已经评星级
+    '30007' => 'The value of the order request rewards is empty', //订单索评奖励礼品值为空
+    '30008' => 'Amazon order pull failed', //亚马逊订单拉取失败
+    '200000' => 'Wrong password', //口令不对
+    '200001' => 'Password has been submitted', //已经提交过口令
+    '200002' => 'Repeat activation email', //重复发送激活邮件
+];

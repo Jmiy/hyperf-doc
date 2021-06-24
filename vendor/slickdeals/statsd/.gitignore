@@ -1,0 +1,15 @@
+# general
+.idea
+.DS_Store
+
+# test coverage report
+tests/coverage
+.phpunit.result.cache
+
+# integration test
+stats.log
+
+# composer
+/vendor
+/composer.lock
+/composer.phar

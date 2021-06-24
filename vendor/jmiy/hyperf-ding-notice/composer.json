@@ -1,0 +1,44 @@
+{
+    "name": "jmiy/hyperf-ding-notice",
+    "description": "a dingtalk robot message handle for send message",
+    "keywords": ["hyperf", "ding talk", "ding notice"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jmiy",
+            "email": "751399695@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DingNotice\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DingNotice\\Tests\\": "tests"
+        }
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "Required to use the Mailgun ding talk driver (^6.3.1|^7.0.1)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "hyperf": {
+            "config": "DingNotice\\ConfigProvider"
+        }
+    }
+}
